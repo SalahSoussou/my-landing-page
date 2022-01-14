@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing</title>
+</head>
+
+<body>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src=".\img\logo.png" alt="cocacola logo" class="logo"></a>
+            <div class="menu" onclick="toggleMenu()"></div>
+            <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content" id="hero">
+            <div class="text">
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <input name="email" id="email" type="email" placeholder="Enter your email address" required />
+                    <input id="submit" type="submit" value="Get Started" class="btn" />
+                </form>
+                <h2>It's The Real Thing</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto at minima facere voluptatibus
+                    quas, labore, magni et cupiditate voluptate aperiam, illum voluptatem. Nobis dicta natus repudiandae
+                    consequatur quaerat sunt totam.</p>
+                <a href="#">Lern More</a>
+                <a href="#" class="playVedeo" onclick="vedioPlay()">
+                    <img src="./img/play-button.png" alt="" srcset="">
+                    <span>Play Video</span>
+                </a>
+            </div>
+
+            <div class="v-area" id="vedio-A">
+                <iframe id="vedio" width="560" height="315" src="https://www.youtube.com/embed/1VM2eLhvsSM"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></Video>
+                <span class="vedio-over" onclick="vedioOver()">&times;</span>
+            </div>
+
+            <div class="imgBox">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./img/cocacola1.png" alt="" srcset=""></div>
+                        <div class="swiper-slide"><img src="./img/cocacola2.png" alt="" srcset=""></div>
+                        <div class="swiper-slide"><img src="./img/cocacola4.png" alt="" srcset=""></div>
+                        <div class="swiper-slide"><img src="./img/cocacola3.png" alt="" srcset=""></div>
+                        <div class="swiper-slide"><img src="./img/cocacola6.png" alt="" srcset=""></div>
+                        <div class="swiper-slide"><img src="./img/cocacola5.png" alt="" srcset=""></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <canvas id="cnv"></canvas>
+            </div>
+        </div>
+        <section id="pricing">
+            <div class="product" id="tenor">
+                <div class="level">Small Pack</div>
+                <h2>$15</h2>
+                <ul>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum.</li>
+                </ul>
+                <button class="btn">Select</button>
+            </div>
+            <div class="product" id="bass">
+                <div class="level">Large Pack</div>
+                <h2>$50</h2>
+                <ul>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum.</li>
+                </ul>
+                <button class="btn">Select</button>
+            </div>
+            <div class="product" id="valve">
+                <div class="level">Party Pack</div>
+                <h2>$100</h2>
+                <ul>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum.</li>
+                </ul>
+                <button class="btn">Select</button>
+            </div>
+        </section>
+        <ul class="foot">
+            <li><a href=""><img src=".\img\facebook.png" alt="faceboo logo"></a></li>
+            <li><a href=""><img src=".\img\twitter.png" alt="twitter logo"></a></li>
+            <li><a href=""><img src=".\img\instagram.png" alt="instagram logo"></a></li>
+        </ul>
+    </section>
+    <!-- <canvas id="cnv"></canvas> -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="my.js"></script>
+</body>
+
+</html>
